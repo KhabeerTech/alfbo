@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <base href="/">
+
+  <!-- Asosiy SEO meta teglar -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Lotin, Kiril, Arab, Hind va Xitoy alifbolarida tezkor va bepul matn konvertatsiyasi. O'zbek, rus, arab, hind va xitoy tillarida yozuvlarni o'girish.">
+  <meta name="keywords" content="alifbo konvertori, lotin krill, arab yozuvi, hind yozuvi, xitoy yozuvi, matn o'girish, o'zbek alifbosi, kirill alifbosi">
+  <meta name="author" content="Sizning Kompaniyangiz">
+
+  <!-- OpenGraph / Social Media meta teglar -->
+  <meta property="og:title" content="Ko'p Tillar Alifbo Konvertori - Lotin, Kiril, Arab, Hind, Xitoy">
+  <meta property="og:description" content="Turli alifbolar o'rtasida matnlarni bepul va tezkor konvertatsiya qilish vositasi">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alifbokonvertor.uz">
+  <meta property="og:image" content="https://alifbokonvertor.uz/images/social-preview.jpg">
+  <meta property="og:site_name" content="Alifbo Konvertori">
+  <meta property="og:locale" content="uz_UZ">
+
+  <!-- Twitter Card meta teglar -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ko'p Tillar Alifbo Konvertori">
+  <meta name="twitter:description" content="5 xil alifboda matnlarni bepul o'girish">
+  <meta name="twitter:image" content="https://alifbokonvertor.uz/images/twitter-preview.jpg">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AlifboKonvertor">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-startup-image" href="icons/splash.png">
+
+  <!-- Favicon va PWA assetlar -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4285F4">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Schema.org markup (Google uchun) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Alifbo Konvertori",
+      "url": "https://alifbokonvertor.uz",
+      "description": "Turli alifbolar o'rtasida matnlarni konvertatsiya qilish vositasi",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Khabeer",
+        "name": "Khabeer"
+      }
+    }
+  </script>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://alifbokonvertor.uz" />
+
+  <title>Alifbo Konvertori | Lotin, Kiril, Arab, Hind, Xitoy matn o'girish</title>
+
+  <!-- Preload va prefetch resurslar -->
+  <link rel="preload" href="flutter_bootstrap.js" as="script">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+  <!-- Noscript kontent -->
+  <noscript>
+    <style>
+      .no-script-message {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #ff4444;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        z-index: 9999;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    <div class="no-script-message">
+      Iltimos, JavaScript-ni yoqing! Ilovamiz to'liq ishlashi uchun JavaScript kerak.
+    </div>
+  </noscript>
+
+  <!-- Loading animatsiyasi uchun CSS -->
+  <style>
+    .flutter-loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      z-index: 9998;
+      transition: opacity 0.3s ease-out;
+    }
+    .loading-logo {
+      width: 100px;
+      height: 100px;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+    .loading-text {
+      margin-top: 20px;
+      color: #4285F4;
+      font-family: Arial, sans-serif;
+      font-size: 1.2rem;
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Flutter bootstrap script -->
+  <script src="flutter_bootstrap.js" async></script>
+  
+  <!-- Loading animatsiyasi -->
+  <div id="flutter-loading" class="flutter-loading">
+    <img src="icons/Icon-192.png" alt="Alifbo Konvertori" class="loading-logo">
+    <p class="loading-text">Alifbo Konvertori yuklanmoqda...</p>
+  </div>
+  
+  <script>
+    // Flutter app yuklangandan so'ng loading animatsiyasini olib tashlash
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var loadingDiv = document.getElementById('flutter-loading');
+        if (loadingDiv) {
+          loadingDiv.style.opacity = '0';
+          setTimeout(function() {
+            loadingDiv.style.display = 'none';
+          }, 300);
+        }
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
